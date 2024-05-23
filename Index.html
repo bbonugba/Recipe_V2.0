@@ -7,9 +7,33 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="materialize.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+<style>
+*{
+         font-family: "Josefin Sans", sans-serif !important; 
+}
+.gradient-bg{
+  background-image: linear-gradient(white, #e65100);
+}
+p{
+line-height: 30px;
+}
+.banner-text{
+    position: absolute;
+    top: 200px;
+    left: 28%;
+    text-align: center;
+    color: white;
+}
+.category a :hover{
+    background-color: black;
+    text-decoration: white;
+}
+</style>
 
 </head>
 <body>
@@ -61,14 +85,19 @@
     </div>
     
     <video src="Images/header-bg-vid.mp4" width="100%"  autoplay loop class="responsive-video" ></video>
+    <div class="banner-text">
+        <h1>Every Dish Tells A Story</h1>
+        <h4>Explore, Cook and Create with Us.</h4>
+        <a href="login" class="btn-large orange darken-4">GET STARTED</a>
+    </div>
 </header>
 
 <main>
     <div class="container">
         <div class="row">
             <div class="col s12 l6">
-                <h1>Start your culinary journey <em class="orange-text text-darken-4">today</em></h1> <br>
-                <h6>We offer you a gateway to an expertly curated selection of global recipes, ranging from traditional dishes to innovative creations, spanning various cuisines and cooking techniques.</h6>
+                <h1>Start your culinary journey <em class="orange-text text-darken-4">today</em></h1>
+                <p>We offer you a gateway to an expertly curated selection of global recipes, ranging from traditional dishes to innovative creations, spanning various cuisines and cooking techniques.</p>
                 <br>
 
                 <a href="https://www.recipe.com/login"  id="login" class="btn-large orange darken-4 white-text" style="border-radius: 10px;">START YOUR JOURNEY</a>
@@ -103,9 +132,9 @@
             <div class="col s12 l7">
                 <h1>Crafted by Culinary <em class="red-text text-darken-4">Wizards</em></h1>
                 
-                <h5>Discover a world of flavorful options that promise mouthwatering results, meticulously curated and perfected by culinary experts, all at your fingertips.
+                <p>Discover a world of flavorful options that promise mouthwatering results, meticulously curated and perfected by culinary experts, all at your fingertips.
                 Easy as pie isn't it?
-                </h5>
+                </p>
                 <br>
                 <a href="https://www.recipe.com/login"  id="login" class="btn-large red darken-4" style="border-radius: 10px;">START COOKING</a>
             </div>
@@ -116,15 +145,16 @@
         <h3 style="text-align: center;" class="white-text">See our <em class="orange-text text-darken-4">numbers</em></h3> <br>
         <div class="container">
             <div class="row">
-                <div class="col s12 l4">
+                <div class="col s12 l2 push-l1"></div>
+                <div class="col s12 l3">
                     <h1 class="white-text">27k+</h1>
                     <h6 class="orange-text text-darken-4"><em>active users each month</em></h6>
                 </div>
-                <div class="col s12 l4">
+                <div class="col s12 l3">
                     <h1 class="white-text">800+</h1>
                     <h6 class="orange-text text-darken-4"><em>available recipes till date</em></h6>
                 </div>
-                <div class="col s12 l4">
+                <div class="col s12 l3">
                     <h1 class="white-text">30+</h1>
                     <h6 class="orange-text text-darken-4"> <em>chefs for consultations</em></h6>
                     <br>
@@ -137,7 +167,7 @@
     <div class="container">
         <br>
         <h2>Meet the <em class="orange-text text-darken-4">experts</em></h2>
-        <h6>Our team of seasoned chefs offer expert guidance and delectable recipes to elevate your kitchen creations to new heights.</h6>
+        <p>Our team of seasoned chefs offer expert guidance and delectable recipes to elevate your kitchen creations to new heights.</p>
         <br>
         <div class="row">
             <div class="col s12 l4">
@@ -182,7 +212,7 @@
         <br>
     </div>
 </main>
-<footer>
+<footer class="gradient-bg">
     <div class="container">
         <div class="row">
             <div class="col s12 l3">
@@ -212,7 +242,7 @@
         </div>
         <br>
     </div>
-    <div style="text-align: center;">
+    <div style="text-align: center;" class="white-text">
      &copy; 2024 Recipe.com All Rights reserved.
     </div>
     <br>
