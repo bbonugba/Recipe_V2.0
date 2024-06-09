@@ -142,7 +142,7 @@ line-height: 30px;
         <div class="row">
             <h3 style="text-align: center;">Select a <em class="orange-text text-darken-4">category</em></h3>
             <div class="col s12 l4">
-                <a href="/">
+                <a href="cakes">
                     <div class="card rounded-edges">
                         <div class="card-image">
                             <img src="Images/cake-main.jpg" alt="" class="responsive-img rounded-edges">
@@ -157,12 +157,30 @@ line-height: 30px;
             </div>
             <div class="col s12 l4">
                 <a href="chicken">
-                    <img src="Images/chicken-main.jpg" alt="" class="responsive-img">
+                    <div class="card rounded-edges">
+                        <div class="card-image">
+                            <img src="Images/chicken-main.jpg" alt="" class="responsive-img rounded-edges">
+                            <div class="overlay">
+                                <div class="overlay-text">Cakes
+                                    <i class="material-icons white-text" style="transform: rotate(45deg);">arrow_upward</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </a>
             </div>
             <div class="col s12 l4">
-                <a href="chicken">
-                    <img src="Images/soup-main.jpg" alt="" class="responsive-img">
+                <a href="soups">
+                    <div class="card rounded-edges">
+                        <div class="card-image">
+                            <img src="Images/soup-main.jpg" alt="" class="responsive-img rounded-edges">
+                            <div class="overlay">
+                                <div class="overlay-text">Soups
+                                    <i class="material-icons white-text" style="transform: rotate(45deg);">arrow_upward</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -325,8 +343,38 @@ line-height: 30px;
                 </ul>
             </div>
         </div>
+        <div>
+            <img src="Images/welcome-banner.jpg" alt="" class="responsive-img">
+        </div>
+        <h1>Start your culinary journey <em class="orange-text text-darken-4">today</em></h1>
+                <p>We offer you a gateway to an expertly curated selection of global recipes, ranging from traditional dishes to innovative creations, spanning various cuisines and cooking techniques.</p>
+                <br>
+
+                <a href="https://www.recipe.com/login"  id="login" class="btn-large orange darken-4 white-text" style="border-radius: 10px;">START YOUR JOURNEY</a>
+                <h3 style="text-align: center;">Tap on a <em class="orange-text text-darken-4">category</em></h3>
         
-        
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="Images/chicken-main.jpg" alt="" class="responsive-img">
+                    <div class="caption left-align">
+                        <h4>Chicken <i class="material-icons white-text" style="transform: rotate(45deg);">arrow_upward</i> </h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="Images/cake-main.jpg" alt="" class="responsive-img">
+                    <div class="caption center-align">
+                        <h4>Cake <i class="material-icons white-text" style="transform: rotate(45deg);">arrow_upward</i></h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="Images/soup-main.jpg" alt="" class="responsive-img">
+                    <div class="caption right-align">
+                        <h4>Soup <i class="material-icons white-text" style="transform: rotate(45deg);">arrow_upward</i> </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
         
     </div>
 
@@ -338,6 +386,13 @@ line-height: 30px;
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
+            $('.slider').slider({
+            indicators:false,
+            // height:500
+            // duration:1500,
+            // interval:10000
+
+         });  
         });
 
     </script>
